@@ -11,7 +11,7 @@ const TransactionAlert = ({ status }) => {
   if (status === 200) {
     return (
       <Alert
-        className="absolute z-50 top-4 max-w-sm transform flex justify-center pl-12 left-1/2  "
+        className="fixed z-50 top-4 max-w-sm transform flex justify-center pl-12 left-1/2  "
         show={show}
         color="green"
         animate={{
@@ -27,7 +27,7 @@ const TransactionAlert = ({ status }) => {
   if (status === 201) {
     return (
       <Alert
-        className="absolute z-50 top-4 max-w-sm transform flex justify-center pl-12 left-1/2 "
+        className="fixed z-50 top-4 max-w-sm transform flex justify-center pl-12 left-1/2 "
         show={show}
         animate={{
           mount: { y: 0, x: -200 },
@@ -42,7 +42,7 @@ const TransactionAlert = ({ status }) => {
   if (status === 400) {
     return (
       <Alert
-        className="absolute z-50 top-4 max-w-sm transform flex justify-center pl-12 left-1/2 "
+        className="fixed z-50 top-4 max-w-sm transform flex justify-center pl-12 left-1/2 "
         show={show}
         color="red"
         animate={{
